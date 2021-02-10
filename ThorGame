@@ -1,9 +1,8 @@
-In this puzzle, you need to compare different values. You have to correlate character variables and integer variables.
 
-A straightforward solution uses 8 conditions. There is a way to simplify it and use only 4 conditions.
+#POWEROFTHOR
+#In this puzzle, you need to compare different values. 
+#The aim is to build a program able to allow Thor to reach the light of power
 
-
-#Your program must allow Thor to reach the light of power.
 #Thor moves on a map which is 40 wide by 18 high. Note that the coordinates (X and Y) start at the top left! 
 ##This means the most top left cell has the coordinates "X=0,Y=0" and the most bottom right one has the coordinates "X=39,Y=17".
 #Once the program starts you are given:
@@ -23,6 +22,7 @@ NW (North-West)
 
 
 
+#Initial variables
 light_x,light_y, InitialTx, InitialTy =[int(i) for i in input().split()]
 thor_x, thor_y = Initial_tx, Initial_ty
 
@@ -47,5 +47,7 @@ while 1:
         direction_y = "S"
         thor_y += 1
     
-    # A single line providing the move to be made: N NE E SE S SW W or NW
+    # A single line providing the move to be made either: N NE E SE S SW W or NW
     print(direction_y + direction_x)
+
+##Problem solved
